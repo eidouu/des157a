@@ -1,0 +1,72 @@
+html{
+    margin: auto; 
+    width: 1150px;
+}
+
+#websiteTitle h1{
+font-family: brandon-grotesque,sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 48px; 
+}
+
+#websiteTitle h2{
+font-family: brandon-grotesque,sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 32px; 
+}
+
+body{
+    margin: auto; 
+    font-family: brandon-grotesque,sans-serif;
+    background-color: #f6fff8;
+}
+
+header{
+    width:1150px;
+    margin: auto; 
+    align-items: center;
+}
+
+#websiteTitle{
+    display: flex;
+    padding: 20px 0 20px 0; 
+    text-align: center; 
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#columns{
+    display:flex;
+    margin: auto; 
+    justify-content: space-between;
+    width: 90%;
+    
+    
+}
+
+#columns h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#columns ul{
+    padding-left:20px;
+    margin-top:0px;
+    line-height: 30px; 
+}
+#columns li{
+    list-style-type: none;
+    font-size:20px;
+    text-decoration: none;
+}
+
+#columns li a{
+    text-decoration: none;
+}
+
+#footer{
+    display: flex; 
+}

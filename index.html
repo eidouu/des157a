@@ -9,47 +9,51 @@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/bak4vgd.css">
     <!--Normalize CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>andre lam</h1>
-        <h2>des157a - interactive design ii - winter 2023</h2>
-        <img src="images/portal page banner v2.jpg" alt="spring banner" length="1100" width="250"
+        <div id="websiteTitle">
+            <h1>andre lam</h1>
+            <h2>des157a - interactive design ii - winter 2023</h2>
+        </div>
+        <img src="images/portal page banner v2.svg" alt="spring banner" length="250px" width="1150px">
     </header>
 
-    <main>
-        <div class="categories">
+    <main id="columns">
+        <div id="studio">
             <h3>studio</h3>
             <nav>
                 <ul>
-                    <li>learning journal</li>
-                    <li>mad libs 2.0</li>
-                    <li>every pictures</li>
-                    <li>game on!</li>
+                    <a href=""><li>learning journal</li></a>
+                    <a href=""><li>mad libs 2.0</li></a>
+                    <a href=""><li>every pictures</li></a>
+                    <a href=""><li>game on!</li></a>
                 </ul>
             </nav>
         </div>
             
-        <div class="categories">
+        <div id="experiments">
             <h3>experiments</h3>
             <nav>
                 <ul>
-                    <li>experiment 1</li>
-                    <li>experiment 2</li>
+                    <a href=""><li>experiment 1</li></a>
+                    <a href=""><li>experiment 2</li></a>
                 </ul>
             </nav>
         </div>
 
-        <div>
+        <div id="r&d">
             <h3>r&d</h3>
             <nav>
                 <ul>
-                    <li>project brief</li>
-                    <li>design comp</li>
-                    <li>version 1</li>
-                    <li>version 2 (user test)</li>
+                    <a href="url:youtube.com"><li>project brief</li></a>
+                    <a href=""><li>design comp</li></a>
+                    <a href=""><li>version 1</li></a>
+                    <a href=""><li>version 2 (user test)</li></a>
                 </ul>
             </nav>
         </div>
@@ -57,14 +61,17 @@
         <div>
             <h3>final project</h3>
             <nav>
-                <li>final project</li>
+                <ul>
+                    <a href=""><li>final project</li></a>
+                </ul>
             </nav>
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <i class="fa-solid fa-square-envelope"></i>
-        <p>test</p>
+        <p><a href="">email me</a>
+        <a href="">valid html </a>and<a href=""> css</a></p>
     </footer>
     
     
