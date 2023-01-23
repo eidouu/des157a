@@ -72,5 +72,6 @@ header{
 }
 
 img{
-    display:block;
+    display: block;
+    object-fit: cover; /* fixes weird and unintentional left and right space of image, thank mr.object-fit */
 }
