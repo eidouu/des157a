@@ -73,7 +73,7 @@ header{
     justify-content: space-around;
     margin: auto; 
     width: 50%; 
-    margin-top: 120px; 
+    margin-top: 240px; 
 }
 
 #bannerGraphic{
@@ -95,6 +95,11 @@ header{
 #bannerGraphic img:hover{
     opacity: 0%;
     transition: opacity .5s;
+}
+
+/* animation hell */
+#petal{
+    width: 90%; 
 }
 
 .petal1{
@@ -185,10 +190,10 @@ header{
 
 
 @keyframes fall{
-    0%{opacity: 0%; top: 75px; right: 150px; rotate: -23deg;}
+    0%{opacity: 0%; top: 75px; right: 350px; rotate: -23deg;}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; right: 70px; rotate: 60deg;}
+    100%{opacity: 0; top: 315px; right: 240px; rotate: 60deg;}
 }
 
 @keyframes fall2{
@@ -199,17 +204,17 @@ header{
 }
 
 @keyframes fall3{
-    0%{opacity: 0%; top: 75px; right: 70px; rotate: -130deg;}
+    0%{opacity: 0%; top: 75px; right: 300px; rotate: -130deg;}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; right: 40px; rotate: 50deg;}
+    100%{opacity: 0; top: 315px; right: 250px; rotate: 50deg;}
 }
 
 @keyframes fall4{
-    0%{opacity: 0%; top: 75px; left: 70px; rotate: -130deg;}
+    0%{opacity: 0%; top: 75px; left: 450px; rotate: -130deg;}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; left: 40px; rotate: 50deg;}
+    100%{opacity: 0; top: 315px; left: 389px; rotate: 50deg;}
 }
 
 @keyframes fall5{
@@ -227,17 +232,17 @@ header{
 }
 
 @keyframes fall7{
-    0%{opacity: 0%; top: 97px; left: 130px; rotate: 20deg;}
+    0%{opacity: 0%; top: 97px; left: 650px; rotate: 20deg;}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; left: 70px; rotate: -180deg;}
+    100%{opacity: 0; top: 315px; left: 780px; rotate: -180deg;}
 }
 
 @keyframes fall8{
     0%{opacity: 0%; top: 97px; left: 123px; rotate: 0deg;}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; left: 60px; rotate: -360deg;}
+    100%{opacity: 0; top: 315px; left: 113px; rotate: -360deg;}
 }
 
 @keyframes fall9{
@@ -258,14 +263,14 @@ header{
     0%{opacity: 0%; top: 97px; left: 690px; transform: rotate(64deg);}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; left: 743px; transform: rotate(-180deg);}
+    100%{opacity: 0; top: 315px; left: 743px; transform: rotate(-432deg);}
 }
 
 @keyframes fall12{
-    0%{opacity: 0%; top: 97px; left: 750px; transform: rotate(64deg);}
+    0%{opacity: 0%; top: 97px; left: 750px; transform: rotate(34deg);}
     10%{opacity: 100%;}
     75%{opacity:100%;}
-    100%{opacity: 0; top: 315px; left: 820px; transform: rotate(-180deg);}
+    100%{opacity: 0; top: 315px; left: 820px; transform: rotate(428deg);}
 }
 
 
