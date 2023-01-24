@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+
+    <h2>To see the functionality of the code, right click anywhere on the page, Inspect Element, and click on Console!</h2>
+    
+    <script>
+        var poundTriangle = ["#", "##", "###", "####", "#####", "######", "#######",]
+
+        for (var i = 0; i < 8; i++){
+                console.log(poundTriangle[i]);
+        }
+
+        /* This program creates a triangle of pound symbols in the console log. I used both an array and a for loop together to make this triangle. I created an array where item zero is one pound, the next is two pounds, next is three pounds, and so on. Using a for loop with the intialize counter at 0, condition is that i isn't greater than 8, and i increases by 1 each time the loop runs. 
+        
+        When the loops runs for the first time, i will still be zero as it hasn't incremented yet. The console.log(poundTriangle[i]) works so that whatever number i is, it will print its corresponding item in the array. Since i is zero and arrays count starting from 0, the first item that will print is the first item of the array, which is "#". In the second time the loop runs, i updates to be 1 due to the incrementor and the same thing happens again except now "##" will be printed in the console log as it's numbered 1 in the array. This continues until i reaches 8, which doesn't even matter as the array only has 7 items.
+        
+        Overall I'm pretty sure there is an easier way to do this at least from what I vaguely remember from previous coding classes I've taken. If the assignment required the last line of the triangle to have a 100 pound symbols, there are ways to automate that instead of creating an array with a hundred items.*/
+    </script>
+    
+</body>
+</html>
