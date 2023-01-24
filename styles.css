@@ -8,6 +8,7 @@ font-family: brandon-grotesque,sans-serif;
 font-weight: 700;
 font-style: normal;
 font-size: 48px; 
+margin: 20px 0 20px 0; 
 }
 
 #websiteTitle h2{
@@ -20,7 +21,7 @@ font-size: 32px;
 body{
     margin: auto; 
     font-family: brandon-grotesque,sans-serif;
-    background-color: #f6fff8;
+    background-color: #E5F4E3;
 }
 
 header{
@@ -49,11 +50,11 @@ header{
 
 #columns h3{
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 0 0 20px 0;
 }
 
 #columns ul{
-    padding-left:20px;
+    padding-left:0;
     margin-top:0px;
     line-height: 30px; 
 }
@@ -69,9 +70,214 @@ header{
 
 #footer{
     display: flex; 
+    justify-content: space-around;
+    margin: auto; 
+    width: 50%; 
+    margin-top: 120px; 
 }
 
-img{
+#bannerGraphic{
+    background-image: url(images/portal_page_banner_winter.svg);
+    background-size: cover; /* makes background image stretch out to total width */
+    transition: transform .5s ease-in-out; 
+}
+
+#bannerGraphic:hover{
+    transition: opacity .5s ease-in-out; 
+}
+
+#bannerGraphic img{
     display: block;
     object-fit: cover; /* fixes weird and unintentional left and right space of image, thank mr.object-fit */
+    transition: transform .5s; /* eases transition */
 }
+
+#bannerGraphic img:hover{
+    opacity: 0%;
+    transition: opacity .5s;
+}
+
+.petal1{
+    position: absolute; 
+    animation: fall 2.1s linear infinite; 
+    width: 20%;
+    height: 20%; 
+}
+
+.petal2{
+    position: absolute; 
+    animation: fall2 2s linear infinite; 
+    width: 18.5%;
+    height: 18.5%; 
+}
+
+.petal3{
+    position: absolute; 
+    animation: fall3 5s linear infinite; 
+    width: 10%;
+    height: 10%; 
+}
+
+.petal4{
+    position: absolute; 
+    animation: fall4 5s linear infinite; 
+    width: 12%;
+    height: 12%; 
+}
+
+.petal5{
+    position: absolute; 
+    animation: fall5 2.3s linear infinite; 
+    width: 21%;
+    height: 21%; 
+}
+
+.petal6{
+    position: absolute; 
+    animation: fall6 2.9s linear infinite; 
+    width: 17.5%;
+    height: 17.5%; 
+}
+
+.petal7{
+    position: absolute; 
+    animation: fall7 4.3s linear infinite; 
+    width: 10%;
+    height: 10%; 
+}
+
+.petal8{
+    position: absolute; 
+    animation: fall8 3.1s linear infinite; 
+    width: 15.5%;
+    height: 15.5%; 
+}
+
+.petal9{
+    position: absolute; 
+    animation: fall9 2.8s linear infinite; 
+    width: 13%;
+    height: 13%; 
+}
+
+.petal10{
+    position: absolute; 
+    animation: fall10 4.5s linear infinite; 
+    width: 5%;
+    height: 5%; 
+}
+
+.petal11{
+    position: absolute; 
+    animation: fall11 3.8s linear infinite; 
+    width: 9%;
+    height: 9%; 
+}
+
+.petal12{
+    position: absolute; 
+    animation: fall12 1.8s linear infinite; 
+    width: 16%;
+    height: 16%; 
+}
+
+
+
+
+@keyframes fall{
+    0%{opacity: 0%; top: 75px; right: 150px; rotate: -23deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; right: 70px; rotate: 60deg;}
+}
+
+@keyframes fall2{
+    0%{opacity: 0%; top: 75px; right: 100px; rotate: -20deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; right: 55px; rotate: 180deg;}
+}
+
+@keyframes fall3{
+    0%{opacity: 0%; top: 75px; right: 70px; rotate: -130deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; right: 40px; rotate: 50deg;}
+}
+
+@keyframes fall4{
+    0%{opacity: 0%; top: 75px; left: 70px; rotate: -130deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 40px; rotate: 50deg;}
+}
+
+@keyframes fall5{
+    0%{opacity: 0%; top: 95px; left: 170px; rotate: -180deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 100px; rotate: 90deg;}
+}
+
+@keyframes fall6{
+    0%{opacity: 0%; top: 110px; left: 330px; rotate: 40deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 240px; rotate: -90deg;}
+}
+
+@keyframes fall7{
+    0%{opacity: 0%; top: 97px; left: 130px; rotate: 20deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 70px; rotate: -180deg;}
+}
+
+@keyframes fall8{
+    0%{opacity: 0%; top: 97px; left: 123px; rotate: 0deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 60px; rotate: -360deg;}
+}
+
+@keyframes fall9{
+    0%{opacity: 0%; top: 97px; left: 500px; rotate: -42deg;}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 487px; rotate: -380deg;}
+}
+
+@keyframes fall10{
+    0%{opacity: 0%; top: 97px; left: 600px; transform: rotate(80deg);}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 620px; transform: rotate(-420deg);}
+}
+
+@keyframes fall11{
+    0%{opacity: 0%; top: 97px; left: 690px; transform: rotate(64deg);}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 743px; transform: rotate(-180deg);}
+}
+
+@keyframes fall12{
+    0%{opacity: 0%; top: 97px; left: 750px; transform: rotate(64deg);}
+    10%{opacity: 100%;}
+    75%{opacity:100%;}
+    100%{opacity: 0; top: 315px; left: 820px; transform: rotate(-180deg);}
+}
+
+
+
+
+
+a{
+    color: #0E0F19;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #57886C;
+}
+
