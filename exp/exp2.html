@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+
+<body id="default">
+    <h1 id="result"></h1>
+
+    <script>
+
+        //user chooses a color from the array and the background color will change
+        var colorList = ['blue', 'orange', 'red', 'green'];
+        
+        //selects body
+        var bodyTag = document.querySelector('body');
+
+        //asks user to insert text, .toLowerCase(); makes the input case insensitive so they can type in all caps if they want 
+        var colorPrompt = prompt("Choose a color from the following list: blue, orange, red, or green", "").toLowerCase();
+
+        
+        function colorAsk(){
+            if (colorPrompt == "" || colorPrompt == null){
+                alert("you didn't enter the correct colors!");
+            } else if (colorPrompt == 'blue'){
+                bodyTag.style.background = "blue"; 
+            } else if (colorPrompt == 'orange'){
+                bodyTag.style.background = 'orange';
+            } else if (colorPrompt == 'red'){
+                bodyTag.style.background = 'red';
+            } else if (colorPrompt == 'green'){
+                bodyTag.style.background = 'green';
+            } else{
+                alert("please enter the correct colors!");
+            }
+
+            return colorPrompt;
+        }
+
+        colorAsk();
+
+        //returns result in string form 
+        var colorResult = wordCombine("you chose", colorPrompt); 
+        document.getElementById("result").innerHTML = colorResult;
+
+        function wordCombine(a, b){
+            return a + " " + b; 
+        }
+
+    </script>
+    
+</body>
+</html>
