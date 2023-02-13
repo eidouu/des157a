@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which Trading Card are You?</title>
+    <title>which kitty kard are you?</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/bak4vgd.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="websiteTitle"> 
+        <h2>which</h2>
+        <h1>kitty kard</h1>
+        <h2>are you?</h2>
+    </div>
+
+    <div id="defaultCard">
+        <form id="myform">
+
+            <!--drop down menu of pre-determined moods-->
+            <label for="mood">give your current mood!</label>
+            <input list="moods" id="noun1">
+            <datalist id="moods">
+                <option value="great!">
+                <option value="chill">
+                <option value="meh">
+            </datalist>
+
+            <label for="talent">what's your talent?</label>
+            <input type="number" id="num1">
+
+            <label for="adject">Provide an adjective</label>
+            <input type="text" id="adj1">
+
+            <label for ="noun1">Provide a verb</label>
+            <input type="text" id="verb1">
+
+            <input type="submit" value="send">
+
+        </form>
+     <article id="madlib"></article>
+    </div>
 </body>
 </html>
