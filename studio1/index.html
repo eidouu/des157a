@@ -18,43 +18,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- JavaScript -->
-    <script src="script.js" defer></script>
+    <script src='script.js' defer></script>
 
     <!-- CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div id="websiteTitle"> 
+    <div id="websiteTitle" class="visible"> 
         <h2>which</h2>
         <h1>kitty kard</h1>
         <h2>are you?</h2>
     </div>
 
-    <div id="defaultCard">
+    <div id="defaultCard" class="visible">
+        <h2>please enter the fields below!</h2>
         <form id="myform">
 
             <!--drop down menu of pre-determined moods-->
-            <label for="mood">give your current mood!</label>
-            <input list="moods" id="noun1">
-            <datalist id="moods">
-                <option value="great!">
-                <option value="chill">
-                <option value="meh">
-            </datalist>
+            <div class="input_group">
+                <label for="mood">current mood</label>
+                <input list="moods" id="mood">
+                <datalist id="moods">
+                    <option value="great!">
+                    <option value="chill">
+                    <option value="meh">
+                
+                </datalist>
+            </div>
 
-            <label for="talent">what's your talent?</label>
-            <input type="number" id="num1">
+            <div class="input_group">
+                <label for="talent">talent</label>
+                <input type="text" id="talent">
+            </div>
 
-            <label for="adject">Provide an adjective</label>
-            <input type="text" id="adj1">
+            <div class="input_group">
+                <label for="num">number</label>
+                <input type="number" id="num">
+            </div>
 
-            <label for ="noun1">Provide a verb</label>
-            <input type="text" id="verb1">
+            <div class="input_group">
+                <label for="adj1">adjective</label>
+                <input type="text" id="adj1">
+            </div>
 
-            <input type="submit" value="send">
+            <div class="input_group">
+                <label for ="adj2">another adjective</label>
+                <input type="text" id="adj2">
+            </div>
+
+            <input type="submit" value="go!" id="submitBttn">
 
         </form>
-     <article id="madlib"></article>
     </div>
+
+    <div id="results" class="hidden">
+        <div id="resultsHeaderText">
+            <h1>ta-da!</h1>
+            <p>your results are in</p>
+            <button id="refreshDraw">draw again</button>
+        </div>
+
+        <div id="resultsCard">
+            <h3 id="talentResults"></h3>
+            <p id="madlibResults"></p>
+        </div>
+    </div>
+
 </body>
 </html>

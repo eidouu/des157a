@@ -2,30 +2,43 @@ body{
     display: grid; 
     grid-template-columns: 2fr 2fr;
     max-width: 1200px;
-    max-height: 750px; 
+    max-height: 700px; 
     margin: auto;
     grid-column-end: auto;
+    background-color: #FFFAEE;
+    align-items: center;
+    justify-items: center; 
+    position: relative; 
+    left: -10%; 
 }
 
 #defaultCard{
     background-image: url(images/cat_default.svg);
-    display: flex; 
-    width: 360px;
+    width: 359px;
     height: 503px;  
     transform: scale(1.5);
     top: 30%; 
+    /* right: -25%;  */
     position: relative; 
 }
 
 #defaultCard form{
     padding: 20px; 
     margin: auto; 
-    font-family: "ff-cocon-pro-condensed", sans-serif;
-    font-weight: 400; 
+    font-family: "ff-cocon-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%; /* adjusts spacing between input lines */
+    text-align: center;
+    position: relative; 
+    top: 20%; 
 }
 
 #defaultCard input{
-    display: block; /* make each input a separate line */ 
+    display: inline; 
 }
 
 #websiteTitle{
@@ -38,14 +51,121 @@ h1{
     font-weight: 700; 
     font-size: 96px; 
     margin-top: 0;
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    color: #144C8E;
 }
 
 h2{
-    font-family: "ff-cocon-pro-condensed", sans-serif;
-    font-weight: 400;
+    font-family: "ff-cocon-pro", sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 48px; 
     margin-top: 0;
     margin-bottom: 0; 
+}
+
+#defaultCard h2{
+    text-align: center; 
+    color: #FFFAEE;
+    font-size: 23px; 
+    padding-top: 20px; 
+    font-family: "ff-cocon-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#defaultCard label{
+    font-size: 12px; 
+    font-weight: 200; 
+    color: #FFFAEE;
+    float: left; 
+}
+
+#defaultCard .input_group input{
+    border-radius: 5px;
+    border-style: none;
+    width: 100px; 
+    text-align: left;
+    float: right; 
+    font-size: 12px; 
+    font-weight: 500; 
+    height: 20px; 
+}
+
+#defaultCard #submitBttn{
+    bottom: -50%; 
+    position: relative; 
+    width: 100px; 
+    height: 30px; 
+    margin: 0 auto; /* center button */
+    border-radius: 5px; 
+    border-style: none;
+}
+
+#defaultCard #submitBttn:hover{
+    color: green; 
+}
+
+.hidden{
+    visibility: hidden;  
+}
+
+.visible{
+    visibility: visible; 
+    position: relative; 
+}
+
+#resultsCard{
+    background-image: url(images/cat_chill.svg);
+    width: 359px;
+    height: 503px;  
+    transform: scale(1.5);
+    top: 30%; 
+    right: -25%; /* */
+    position: relative; 
+}
+
+#results{
+    display: grid; 
+    grid-gap: 150px; 
+    grid-template-columns: 400px 2fr;
+    max-width: 1200px;
+    max-height: 750px; 
+    margin: auto;
+    grid-column-end: auto;
+    background-color: #FFFAEE;
+    align-items: center;
+    justify-items: center; 
+    left: 20%; 
+}
+
+#results #resultsHeaderText{
+    font-family: "ff-cocon-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px; 
+}
+
+#results #resultsCard p, h3 {
+    font-family: "ff-cocon-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    position: relative; 
+    bottom: -70%;
+    color: #FFFAEE;
+}
+
+#refreshDraw{
+    border-style: none;
+    border-radius: 5px; 
+    color: #FFFAEE;
+    background-color: #144C8E;
+    width: 150px;
+    height: 50px;  
+    margin-top: 20px; 
+}
+
+#refreshDraw:hover{
+    color: #144C8E;
+    background-color: #FFFAEE;
 }
