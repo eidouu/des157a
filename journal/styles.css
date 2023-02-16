@@ -56,3 +56,14 @@ article a{
 article a:hover{
     color: #FFBA08;
 }
+
+article img{
+    margin-top: 19px;
+    display: block; 
+    border-radius: 5px; 
+}
+
+figcaption {
+    padding-top: 5px; 
+    font-style: italic;
+}
