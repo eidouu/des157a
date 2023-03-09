@@ -21,7 +21,9 @@
     const header = document.querySelector('header'); 
     const headerText = document.querySelector('header p');
     const smack = document.querySelector('#smack');
-    const audio = new Audio("sound/face-punch-91909.mp3")
+
+    const audio = new Audio("sound/face-punch-91909.mp3");
+    const audio2 = new Audio("sound/Sad-trombone.mp3"); 
 
     //start game by deciding who's turn it is, Pink Kirby is index = 0 and Green Kirby is index = 1
     gameData.index = Math.round(Math.random());
@@ -53,10 +55,12 @@
             header.style.backgroundColor = "#7D9E67";
             document.querySelector('#smack').style.backgroundColor = "#7D9E67";
         }
-		smack.addEventListener('click', damageRoll);
-        smack.addEventListener('click', function(){
-            audio.play; 
-        })
+		smack.addEventListener('click', function(){
+            damageRoll(); 
+        });
+        // smack.addEventListener('click', function(){
+        //     audio.play; 
+        // })
 
     };
 
@@ -70,6 +74,7 @@
 			gameAlerts.innerHTML = 'You missed! Switching turns...';
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 			setTimeout(setUpTurn, 2000);
+            audio2.play(); 
 		}
 
 		// if player rolls anything else
@@ -87,6 +92,7 @@
                 console.log(gameData.roll);
                 console.log(gameData.HP[0]); 
             }
+            audio.play(); 
 			};
 
             // HP continuously updates without resetting back to 25 
