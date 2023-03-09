@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    font-family: "Lexend", sans-serif; 
+}
+
+header img{
+    max-width: 254px; 
+}
+
+#scoreboard{
+    text-align: center; 
+}
+
+#scoreboard p:nth-child(2){
+    font-size: 32px; 
+    font-weight: 700; 
+    margin: 0; 
+}
+
+#arena img{
+    max-width: 355px; 
+    padding: 90px 0 90px 0 ; 
+}
+
+#arena{
+    display: flex; 
+    justify-content: space-around;
+}
+
+#bottomArea{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+#gameAlerts{
+    background-color: grey;
+    width: 625px; 
+    border-radius: 10px;
+    max-height: 112px; 
+    display: flex; 
+    align-items: center;
+}
+
+#gameAlerts p{
+    padding: 20px;
+    margin: 0; 
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px; 
+}
+
+button{
+    width: 234px; 
+    height: 112px; 
+    border: none;
+    border-radius: 10px; 
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 36px; 
+    font-weight: 500; 
+}
+
+footer{
+    display: flex; 
+    font-family: "Lexend", sans-serif;
+    gap: 20px; 
+    justify-content: center;
+    padding-top: 40px; 
+}
+
+footer a{
+    text-decoration: none;
+    color: black; 
+}
+
+footer a:hover{
+    border-bottom: 4px solid black; 
+    padding-bottom: 4px; 
+}

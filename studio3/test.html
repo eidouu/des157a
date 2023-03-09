@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button>click</button>
+
+
+<script>
+const audio = new Audio("sound/face-punch-91909.mp3");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(function button() {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+</script>
+
+</body>
+</html>
