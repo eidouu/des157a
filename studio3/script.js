@@ -21,6 +21,7 @@
     const header = document.querySelector('header'); 
     const headerText = document.querySelector('header p');
     const smack = document.querySelector('#smack');
+    const audio = new Audio("sound/face-punch-91909.mp3")
 
     //start game by deciding who's turn it is, Pink Kirby is index = 0 and Green Kirby is index = 1
     gameData.index = Math.round(Math.random());
@@ -54,7 +55,6 @@
         }
 		smack.addEventListener('click', damageRoll);
         smack.addEventListener('click', function(){
-            let audio = new Audio('sound/face-punch-91909.mp3');
             audio.play; 
         })
 
