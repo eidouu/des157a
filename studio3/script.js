@@ -4,7 +4,7 @@
     console.log('reading.js')
 	/* 
 	This gets the player: gameData.players[gameData.index]
-	This gets the first die: gameData.dice[gameData.roll1-1]
+	This determines how much HP each smack does: gameData.roll
 	This gets the second die: gameData.dice[gameData.roll2-1]
 	This gets the HP of the current player: gameData.HP[gameData.index]
 	*/
@@ -38,19 +38,20 @@
 
 	function setUpTurn() {
         console.log(`it's ${gameData.players[gameData.index]}'s turn`);
+        
         let greenKirbyHP = gameData.HP[1];
         let pinkKirbyHP = gameData.HP[0];
 
         //Pink Kirby Turn
         if (gameData.players[gameData.index] == "Pink Kirby"){
-            gameAlerts.innerHTML = `Roll the dice for ${gameData.players[0]}`;
+            gameAlerts.innerHTML = `It's time to smack them ${gameData.players[0]}!`;
             document.querySelector('#kirbyTurn').innerHTML = `${gameData.players[0]}'s Turn`;
             header.style.backgroundColor = "#B5506F";
             document.querySelector('#smack').style.backgroundColor = "#B5506F";
         }
         //Green Kirby Turn
         else if (gameData.players[gameData.index] == "Green Kirby"){
-            gameAlerts.innerHTML = `Roll the dice for ${gameData.players[1]}`;
+            gameAlerts.innerHTML = `It's time to smack them ${gameData.players[1]}!`;
             document.querySelector('#kirbyTurn').innerHTML = `${gameData.players[1]}'s Turn`;
             header.style.backgroundColor = "#7D9E67";
             document.querySelector('#smack').style.backgroundColor = "#7D9E67";
@@ -72,9 +73,9 @@
 		// if player rolls a 1
 		if( gameData.roll <= 1 ){ 
 			gameAlerts.innerHTML = 'You missed! Switching turns...';
-			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+			gameData.index ? (gameData.index = 0) : (gameData.index = 1); //switches player turn
 			setTimeout(setUpTurn, 2000);
-            audio2.play(); 
+            audio2.play(); //plays sad trombone for missing you silly goose
 		}
 
 		// if player rolls anything else
@@ -108,6 +109,7 @@
 		if (gameData.HP[1] <= 0) {
 			gameAlerts.innerHTML = `${gameData.players[0]} 
 			wins!`;
+            //greys out images of opponent to indicate defeat
             document.querySelectorAll('header img')[1].style.filter = "grayscale(100%)"; 
             document.querySelectorAll('#arena img')[1].style.filter = "grayscale(100%)";
 
@@ -116,6 +118,7 @@
 	    } else if(gameData.HP[0] <= 0){
 			gameAlerts.innerHTML = `${gameData.players[1]} 
 			wins!`;
+             //greys out images of opponent to indicate defeat
             document.querySelectorAll('header img')[0].style.filter = "grayscale(100%)"; 
             document.querySelectorAll('#arena img')[0].style.filter = "grayscale(100%)";
         };
