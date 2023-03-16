@@ -3,12 +3,14 @@
     "use strict"; 
     console.log('reading.js'); 
 
+    alert("Hello! I've chosen to redo my portal page where the banner cycles through the four seasons endlessly. There isn't much interaction and the code isn't quite there yet (it's currently stuck on only spring and fall) so feel free to just observe the graphics for a few seconds!");
+
     let banners = 
     ["images/portal_page_banner_v2.svg",
      "images/portal_page_banner_v2_summer.svg",
      "images/portal_page_banner_v2_fall.svg",
      "images/portal_page_banner_v2_winter.svg"
-    ];
+    ]
 
     let fallingObjects = 
     ["images/petal_1.svg",
@@ -17,9 +19,11 @@
     "images/snowflake.svg"
     ];
 
+    // targets the banner image
     const banner = document.querySelector('#bannerGraphic img');
 
-    const falling = document.querySelectorAll('.petals');
+    // targets all falling object images
+    const falling = document.querySelectorAll('.petals img');
 
     //switches banner
     function bannerChange() {
@@ -29,6 +33,7 @@
             if (i > banners.length){ //if index goes past winter then it resets back to spring
                 i = 1; 
             }
+            console.log(banner.src);
             console.log(falling.src); 
         }
     };
