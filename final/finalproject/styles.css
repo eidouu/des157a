@@ -44,13 +44,14 @@ header{
     margin: auto; 
     justify-content: space-between;
     width: 90%;
-    
+    margin-top: 32px; 
     
 }
 
 #columns h3{
     font-size: 36px;
     margin-bottom:20px;
+    margin-top: 0; 
 }
 
 #columns ul{
