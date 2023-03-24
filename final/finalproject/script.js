@@ -23,6 +23,9 @@
     // targets all falling object images
     const falling = document.querySelectorAll('.petals img');
 
+    // change background color
+    const background = document.querySelector('body');
+
     var rect = bannerTarget.getBoundingClientRect();
     console.log(rect.left, rect.top); 
 
@@ -35,23 +38,27 @@
                 eachItem.src = "images/peach.svg"; 
             });
             bannerTarget.src = "images/portal_page_banner_v2_summer.svg"
+            background.style.backgroundColor = "#ECFCFF";
             setTimeout( function(){
                 falling.forEach( function (eachItem){
                     eachItem.src = "images/fallLeaf.svg"; 
                 });
                 bannerTarget.src = "images/portal_page_banner_v2_fall.svg"
+                background.style.backgroundColor = "#FFF5EC";
                 setTimeout( function(){
                     falling.forEach( function (eachItem){
                         eachItem.src = "images/snowflake.svg"; 
                     });
                     bannerTarget.src = "images/portal_page_banner_winter.svg"
+                    background.style.backgroundColor = "#F2ECFF";
                     setTimeout( function(){
                         falling.forEach( function (eachItem){
                             eachItem.src = "images/petal_1.svg"; 
                         });
                         bannerTarget.src = "images/portal_page_banner_v2.svg"
+                        background.style.backgroundColor = "#E5F4E3"; 
                         setTimeout( function(){
-                            blah(); 
+                            sourceSwap(); 
                         }, 5000);
                     }, 5000);
                     
